@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>面向对象 on 蔡培喜的博客</title>
+    <link>https://capex96.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+    <description>Recent content in 面向对象 on 蔡培喜的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Oct 2019 17:49:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://capex96.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>多态举例</title>
+      <link>https://capex96.github.io/post/%E5%A4%9A%E6%80%81%E4%B8%BE%E4%BE%8B/</link>
+      <pubDate>Fri, 25 Oct 2019 17:49:00 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E5%A4%9A%E6%80%81%E4%B8%BE%E4%BE%8B/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;悲伤逆流成河&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

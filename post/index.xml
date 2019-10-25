@@ -2,21 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 蔡培喜的博客</title>
-    <link>http://capex96.github.io/post/</link>
+    <link>https://capex96.github.io/post/</link>
     <description>Recent content in Posts on 蔡培喜的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 20 Oct 2019 20:40:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 00:16:42 +0800</lastBuildDate>
     
-	<atom:link href="http://capex96.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://capex96.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>单例模式</title>
+      <link>https://capex96.github.io/post/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sat, 26 Oct 2019 00:16:42 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;生活就是生下来，活下去&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>java网络编程</title>
+      <link>https://capex96.github.io/post/java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Fri, 25 Oct 2019 18:10:00 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;浅尝辄止&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>多态举例</title>
+      <link>https://capex96.github.io/post/%E5%A4%9A%E6%80%81%E4%B8%BE%E4%BE%8B/</link>
+      <pubDate>Fri, 25 Oct 2019 17:49:00 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E5%A4%9A%E6%80%81%E4%B8%BE%E4%BE%8B/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;悲伤逆流成河&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>数据库面试补充</title>
+      <link>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9D%A2%E8%AF%95%E8%A1%A5%E5%85%85/</link>
+      <pubDate>Wed, 23 Oct 2019 15:59:42 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9D%A2%E8%AF%95%E8%A1%A5%E5%85%85/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;没有什么能够阻挡&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>面试</title>
+      <link>https://capex96.github.io/post/%E4%BA%8B%E5%8A%A1/</link>
+      <pubDate>Wed, 23 Oct 2019 15:05:58 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E4%BA%8B%E5%8A%A1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;办法总比困难多&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>博客常规操作</title>
-      <link>http://capex96.github.io/post/%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</link>
+      <link>https://capex96.github.io/post/%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 20 Oct 2019 20:40:00 +0800</pubDate>
       
-      <guid>http://capex96.github.io/post/%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://capex96.github.io/post/%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;开始了&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -24,10 +79,10 @@
     
     <item>
       <title>快速建立sql概念</title>
-      <link>http://capex96.github.io/post/sql_study/</link>
+      <link>https://capex96.github.io/post/sql_study/</link>
       <pubDate>Fri, 18 Oct 2019 17:14:23 +0800</pubDate>
       
-      <guid>http://capex96.github.io/post/sql_study/</guid>
+      <guid>https://capex96.github.io/post/sql_study/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;只是这样没有目标的玩，是打不了十年的&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -37,10 +92,10 @@
     
     <item>
       <title>Markdown快速上手</title>
-      <link>http://capex96.github.io/post/1st/</link>
+      <link>https://capex96.github.io/post/1st/</link>
       <pubDate>Mon, 14 Oct 2019 19:55:54 +0800</pubDate>
       
-      <guid>http://capex96.github.io/post/1st/</guid>
+      <guid>https://capex96.github.io/post/1st/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;开始了就坚持下去吧&lt;/p&gt;
 &lt;/blockquote&gt;</description>

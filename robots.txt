@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://capex96.github.io/sitemap.xml
+Sitemap: https://capex96.github.io/sitemap.xml

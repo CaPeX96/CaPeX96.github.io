@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sql on 蔡培喜的博客</title>
-    <link>http://capex96.github.io/tags/sql/</link>
+    <link>https://capex96.github.io/tags/sql/</link>
     <description>Recent content in sql on 蔡培喜的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 18 Oct 2019 17:14:23 +0800</lastBuildDate>
     
-	<atom:link href="http://capex96.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://capex96.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>快速建立sql概念</title>
-      <link>http://capex96.github.io/post/sql_study/</link>
+      <link>https://capex96.github.io/post/sql_study/</link>
       <pubDate>Fri, 18 Oct 2019 17:14:23 +0800</pubDate>
       
-      <guid>http://capex96.github.io/post/sql_study/</guid>
+      <guid>https://capex96.github.io/post/sql_study/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;只是这样没有目标的玩，是打不了十年的&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
