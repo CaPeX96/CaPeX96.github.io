@@ -67,6 +67,15 @@
     </item>
     
     <item>
+      <title>下午面试</title>
+      <link>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Sun, 20 Oct 2019 20:40:00 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>博客常规操作</title>
       <link>https://capex96.github.io/post/%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 20 Oct 2019 20:40:00 +0800</pubDate>
@@ -117,33 +126,6 @@
  函数依赖：能确定 完全函数依赖：一起才能确定 部分函数依赖：部分就能确定 传递函数依赖：A确定B，B确定C，A确定C 主属性：被其他属性完全依赖   通过拆表消除部分函数依赖，解决数据冗余问题
  第三范式（3NF)：2NF的基础上，任何非主属性不依赖于其他非主属性（消除传递函数依赖）
   通过拆表消除传递函数依赖，解决增删带来的问题</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</guid>
-      <description>面试 技术面试  项目实战方面：
- Spring Boot
- 源于Spring，基因良好
- IOC：控制反转
- DI：依赖注入，自动赋值 为Spring容器添加组件的注解 @Configuration+@Bean @ComponentScan+@Component or @Controller or @Service or @Repository 为组件自动装配的注解 Spring规范@Autowired Java规范@Resource（不支持优先注入） Java规范@Inject（不支持required=false）
- 组件注入：@Import
-  AOP：面向切面编程
- 动态代理：在程序运行期间动态的将某段代码切入到指定方法指定位置进行运行编程的方式
- 配置类田间注解@EnableAspectJAutoProxy开启AOP，拦截方法，正常执行一条链，异常一条链
-   创建切面类
-​ 类上的注解：@Component加入组件 @Aspect 切面类
-​ 方法上的注解@Before @Around @After @AfterReturning @AfterThrowing
-Aspect切面 JoinPoint连接点 Pointcut切点 Advice增强 Target目标对象 Weaving织入
-业务逻辑和切面的交点是切点
-通过切点找到目标对象bean，增强对象，再织入会切面，业务逻辑执行增强后的bean
- 声明事务：   ​ @EnableTransactionManagement开启spring事务管理，
-​ 给使用sql的方法加上@Transational注解（自动开启事务，提交，错误则回滚）
-​ 在配置类中加入事务管理器bean，注入到IOC容器中
- 简化编码：指引入一个spring-boot-starter-web的依赖就相当于引入了一系列依赖springmvc，内置tomcat，日志slf4j，junit测试，validate验证 简化配置：大量默认配置</description>
     </item>
     
   </channel>
