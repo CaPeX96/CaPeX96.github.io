@@ -6,10 +6,28 @@
     <description>Recent content in Posts on 蔡培喜的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 26 Oct 2019 00:16:42 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2019 20:40:00 +0800</lastBuildDate>
     
 	<atom:link href="https://capex96.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>面试前看看</title>
+      <link>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Sat, 02 Nov 2019 20:40:00 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据库范式</title>
+      <link>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/</link>
+      <pubDate>Fri, 01 Nov 2019 20:40:00 +0800</pubDate>
+      
+      <guid>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>单例模式</title>
@@ -45,34 +63,25 @@
     </item>
     
     <item>
-      <title>数据库面试补充</title>
-      <link>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9D%A2%E8%AF%95%E8%A1%A5%E5%85%85/</link>
+      <title>事务</title>
+      <link>https://capex96.github.io/post/%E4%BA%8B%E5%8A%A1/</link>
       <pubDate>Wed, 23 Oct 2019 15:59:42 +0800</pubDate>
       
-      <guid>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9D%A2%E8%AF%95%E8%A1%A5%E5%85%85/</guid>
+      <guid>https://capex96.github.io/post/%E4%BA%8B%E5%8A%A1/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;没有什么能够阻挡&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
     <item>
-      <title>面试</title>
-      <link>https://capex96.github.io/post/%E4%BA%8B%E5%8A%A1/</link>
+      <title>面试经验</title>
+      <link>https://capex96.github.io/post/%E9%9D%A2%E7%BB%8F/</link>
       <pubDate>Wed, 23 Oct 2019 15:05:58 +0800</pubDate>
       
-      <guid>https://capex96.github.io/post/%E4%BA%8B%E5%8A%A1/</guid>
+      <guid>https://capex96.github.io/post/%E9%9D%A2%E7%BB%8F/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;办法总比困难多&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>下午面试</title>
-      <link>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</link>
-      <pubDate>Sun, 20 Oct 2019 20:40:00 +0800</pubDate>
-      
-      <guid>https://capex96.github.io/post/%E9%9D%A2%E8%AF%95/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -108,24 +117,6 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;开始了就坚持下去吧&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://capex96.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/</guid>
-      <description>数据库范式
- 第一范式（1NF）:每一列都是不可分割的原子数据项（没有复合列，复合列只在传统表格中有，但凡数据库表都是单列即原子数据项）存在问题：
- 数据冗余
- 增加数据存在问题（数据不全，含空）
- 删除数据存在问题（某些固有直接陪同消失）
-  第二范式（2NF）：1NF的基础上，非主属性必须完全依赖候选码（消除部分函数依赖）
- 几个概念
- 函数依赖：能确定 完全函数依赖：一起才能确定 部分函数依赖：部分就能确定 传递函数依赖：A确定B，B确定C，A确定C 主属性：被其他属性完全依赖   通过拆表消除部分函数依赖，解决数据冗余问题
- 第三范式（3NF)：2NF的基础上，任何非主属性不依赖于其他非主属性（消除传递函数依赖）
-  通过拆表消除传递函数依赖，解决增删带来的问题</description>
     </item>
     
   </channel>
