@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-11-24T20:40:00&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-24T20:50:00&#43;08:00" />
-<meta itemprop="wordCount" content="29">
+<meta itemprop="wordCount" content="1569">
 
 
 
@@ -310,8 +310,22 @@
 <ul>
 <li>
 <ul>
-<li><a href="#八皇后">八皇后</a></li>
-<li><a href="#数独">数独</a></li>
+<li><a href="#八皇后">八皇后</a>
+<ul>
+<li>
+<ul>
+<li><a href="#问题描述">问题描述</a></li>
+<li><a href="#代码实现">代码实现</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#数独">数独</a>
+<ul>
+<li>
+<ul>
+<li><a href="#问题描述-1">问题描述</a></li>
+<li><a href="#代码实现-1">代码实现</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -323,19 +337,218 @@
     <div class="post-content">
       <h3 id="八皇后">八皇后</h3>
 
-<p>问题描述</p>
+<h5 id="问题描述">问题描述</h5>
 
-<p>回溯方案</p>
+<p>8*8的棋盘下填下8个皇后，要求每个皇后不能在同一行同一列同一斜线</p>
 
-<p>代码实现</p>
+<p>八皇后有92个解</p>
+
+<h5 id="代码实现">代码实现</h5>
+
+<pre><code class="language-java">class Main {
+	public static int[][] arry = new int[8][8];// 棋盘
+	public static int count = 0;// 方案数
+
+	public static void main(String[] args) {
+		System.out.println(&quot;八皇后问题&quot;);
+		findQueen(0);
+		System.out.println(&quot;八皇后问题共有：&quot; + count + &quot;种可能&quot;);
+	}
+
+	public static void findQueen(int i) {// 寻找皇后节点
+		if (i &gt; 7) {// 0到7(即8行)都成功填了皇后
+			count++;// 找到一个八皇后的解
+			print();// 打印八皇后的解
+			return;
+		}
+
+		for (int m = 0; m &lt; 8; m++) {// 循环i行每列都试图填一个皇后
+			if (check(i, m)) {// 检查皇后摆放是否合适
+				arry[i][m] = 1;
+				findQueen(i + 1);// 深度回溯,每行填一个皇后，递归算法
+				arry[i][m] = 0;// 清零，以免回溯的时候出现脏数据
+			}
+		}
+	}
+
+	public static boolean check(int k, int j) {// 判断节点是否合适，只需检查上半部分，下半部分还未填入
+		for (int i = 0; i &lt; k; i++) {// 检查列冲突，行冲突不用检查，填写是按行填的，有清零在，行冲突不会发生
+			if (arry[i][j] == 1) {// k行j列上方有1则冲突
+				return false;
+			}
+		}
+		for (int i = k - 1, m = j - 1; i &gt;= 0 &amp;&amp; m &gt;= 0; i--, m--) {// 检查左对角线
+			if (arry[i][m] == 1) {// k行j列左上有1则冲突
+				return false;
+			}
+		}
+		for (int i = k - 1, m = j + 1; i &gt;= 0 &amp;&amp; m &lt;= 7; i--, m++) {// 检查右对角线
+			if (arry[i][m] == 1) {// k行j列右上有1则冲突
+				return false;
+			}
+		}
+		return true;//上述验证都通过才true
+	}
+
+	public static void print() {// 数组结果打印
+        System.out.print(&quot;方案&quot; + count + &quot;:&quot; + &quot;\n&quot;);
+        for (int i = 0; i &lt; 8; i++) {
+            for (int m = 0; m &lt; 8; m++) {
+                if (arry[i][m] == 1) {
+                    System.out.print(&quot;皇后&quot;+(i+1)+&quot;在第&quot;+(i+1)+&quot;行，第&quot;+(m+1)+&quot;列\t&quot;);//打印方式1
+                    //System.out.print(&quot;o &quot;);//打印方式2
+                } else {
+                    //System.out.print(&quot;+ &quot;);//打印方式2
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+}
+</code></pre>
 
 <h3 id="数独">数独</h3>
 
-<p>问题描述</p>
+<h5 id="问题描述-1">问题描述</h5>
 
-<p>回溯方案</p>
+<p>9行9列的填数游戏，要求每一行每一列每一个九宫都不能有重复的数字，只能是1到9</p>
 
-<p>代码实现</p>
+<p>输入一个代表数独的数组</p>
+
+<p>输出一个填完数后的数组(答案一般唯一)</p>
+
+<h5 id="代码实现-1">代码实现</h5>
+
+<pre><code class="language-java">import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        // 输入一个9*9数独，0表示未填
+        Scanner sc = new Scanner(System.in);
+        int[][] array = new int[9][9];
+        while (sc.hasNext()) {
+            // 1.输入
+            int depth = 0;
+            for (int i = 0; i &lt; 9; i++) {
+                for (int j = 0; j &lt; 9; j++) {
+                    array[i][j] = sc.nextInt();
+                    if (array[i][j] == 0) {
+                        depth++;
+                    }
+                }
+            }
+            //2.数独检查
+            if (!isCheck(array)) {
+                throw new Exception(&quot;数独有误&quot;);
+            }
+            //3.填数
+            //System.out.println(depth);
+            depth = dfs(array, depth);
+            //4.输出填数结果
+            //System.out.println(depth);
+            printArray(array);
+            System.out.println();
+        }
+    }
+    static int cnt=1,count=1;
+    public static int dfs(int[][] board, int depth) {
+//        if (depth == 0){         
+//            return depth;
+//        }
+        for (int i = 0; i &lt; board.length; i++) {
+            for (int j = 0; j &lt; board[0].length; j++) {
+                if (board[i][j] == 0) {
+                    for (int k = 1; k &lt; 10; k++) {
+                        board[i][j] = k;
+                        if (isValid(board, i, j)) {
+                            depth--;
+                            depth = dfs(board, depth);
+                            if (depth == 0){//若正确，不断return 0，出栈
+                                return depth;
+                            }
+                            depth++;
+                        }
+                    }
+                    board[i][j] = 0;//错误填数，还原现场，防脏读
+                    return depth;
+                }
+            }
+        }
+        return depth;
+    }
+
+
+    private static boolean isValid(int[][] array, int i, int j) {
+        //j列验证
+        int[] checkj = new int[10];
+        int[] checki = new int[10];
+        for (int k = 0; k &lt; 9; k++) {
+            if (checkj[array[k][j]] == 0) {//初始化赋值
+                checkj[array[k][j]]++;
+            } else {//同一个位置再次赋值
+                if (array[k][j] != 0) {//不是0则列验证为false
+                    return false;
+                }
+            }
+            if (checki[array[i][k]] == 0) {//初始化赋值
+                checki[array[i][k]]++;
+            } else {//同一个位置再次赋值
+                if (array[i][k] != 0) {//不是0则列验证为false
+                    return false;
+                }
+            }
+        }//出来则j列意味1-9无重复、出来则意味i行1-9无重复
+
+        //九宫格验证
+        int[] check = new int[10];
+        //i : 0 1 2 -&gt; 0
+        //i : 3 4 5 -&gt; 3
+        //i : 6 7 8 -&gt; 6
+        //故 i= i/3*3 ,j同理
+        for (int u = i / 3 * 3; u &lt; i / 3 * 3 + 3; u++) {
+            for (int v = j / 3 * 3; v &lt; j / 3 * 3 + 3; v++) {
+                if (check[array[u][v]] == 0) {//初始化赋值
+                    check[array[u][v]]++;
+                } else {//同一个位置再次赋值
+                    if (array[u][v] != 0) {//不是0则列验证为false
+                        return false;
+                    }
+                }
+            }
+        }//出来则意味所在九宫格1-9无重复
+        return true;//此次填入无错误，不代表符合最终结果
+    }
+
+    public static boolean isCheck(int[][] array) {//数独可填性验证，可不做
+        if (array.length != 9)
+            return false;
+        if (array[0].length != 9)
+            return false;
+        Set&lt;Integer&gt; set = new HashSet&lt;Integer&gt;();
+        Integer[] a = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        List&lt;Integer&gt; list = Arrays.asList(a);
+        set.addAll(list);
+        for (int i = 0; i &lt; array.length; i++) {
+            for (int j = 0; j &lt; array[0].length; j++) {
+                if (!set.contains(array[i][j]))
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    public static void printArray(int[][] array) {
+        for (int i = 0; i &lt; array.length; i++) {
+            for (int j = 0; j &lt; array[0].length; j++) {
+                System.out.print(array[i][j] + &quot; &quot;);
+            }
+            System.out.println();
+        }
+    }
+}
+
+</code></pre>
     </div>
 
     
